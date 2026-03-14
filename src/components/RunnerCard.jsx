@@ -1,9 +1,19 @@
 export default function RunnerCard({ data }) {
   return (
     <div className="card">
-      <h2>{data.runner}</h2>
-      <p>{data.challenge}</p>
-      <span className="tier">{data.tier}</span>
+
+      <div className="runnerName">
+        {data.runner}
+      </div>
+
+      <div className="challenge">
+        {data.challenge}
+      </div>
+
+      <div className="tier">
+        {data.tier}
+      </div>
+
     </div>
   );
 }
